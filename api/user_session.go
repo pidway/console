@@ -23,20 +23,20 @@ import (
 	"strconv"
 	"time"
 
-	policies "github.com/minio/console/api/policy"
-	"github.com/minio/madmin-go/v3"
+	policies "github.com/pidway/console/api/policy"
+	"github.com/pidway/madmin-go/v3"
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
-	"github.com/minio/pkg/v2/policy/condition"
+	"github.com/pidway/pkg/v2/policy/condition"
 
-	minioIAMPolicy "github.com/minio/pkg/v2/policy"
+	minioIAMPolicy "github.com/pidway/pkg/v2/policy"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	authApi "github.com/minio/console/api/operations/auth"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/pkg/auth/ldap"
+	"github.com/pidway/console/api/operations"
+	authApi "github.com/pidway/console/api/operations/auth"
+	"github.com/pidway/console/models"
+	"github.com/pidway/console/pkg/auth/idp/oauth2"
+	"github.com/pidway/console/pkg/auth/ldap"
 )
 
 type Conditions struct {

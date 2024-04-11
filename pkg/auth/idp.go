@@ -19,8 +19,8 @@ package auth
 import (
 	"context"
 
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/pidway/console/pkg/auth/idp/oauth2"
+	"github.com/pidway/minio-go/v7/pkg/credentials"
 	xoauth2 "golang.org/x/oauth2"
 )
 

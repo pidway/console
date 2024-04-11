@@ -121,7 +121,7 @@ export const validRoutes = (
     },
     {
       group: "User",
-      path: "https://min.io/docs/minio/linux/index.html?ref=con",
+      path: "https://min.io/docs/pidway/linux/index.html?ref=con",
       name: "Documentation",
       icon: <DocumentationIcon />,
       forceDisplay: true,

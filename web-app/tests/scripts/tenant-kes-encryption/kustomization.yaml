@@ -6,4 +6,4 @@ images:
   - name: minio/operator
 
 resources:
-  - github.com/minio/operator/examples/kustomization/tenant-kes-encryption
+  - github.com/pidway/operator/examples/kustomization/tenant-kes-encryption

@@ -25,16 +25,16 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/pidway/console/pkg/utils"
 
-	xhttp "github.com/minio/console/pkg/http"
+	xhttp "github.com/pidway/console/pkg/http"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	subnetApi "github.com/minio/console/api/operations/subnet"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/subnet"
-	"github.com/minio/madmin-go/v3"
+	"github.com/pidway/console/api/operations"
+	subnetApi "github.com/pidway/console/api/operations/subnet"
+	"github.com/pidway/console/models"
+	"github.com/pidway/console/pkg/subnet"
+	"github.com/pidway/madmin-go/v3"
 )
 
 func registerSubnetHandlers(api *operations.ConsoleAPI) {

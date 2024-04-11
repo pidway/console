@@ -23,9 +23,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/target/http"
-	"github.com/minio/pkg/v2/env"
+	"github.com/pidway/console/pkg/logger/config"
+	"github.com/pidway/console/pkg/logger/target/http"
+	"github.com/pidway/pkg/v2/env"
 )
 
 // NewConfig - initialize new logger config.

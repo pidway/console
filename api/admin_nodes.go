@@ -20,9 +20,9 @@ import (
 	"context"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	systemApi "github.com/minio/console/api/operations/system"
-	"github.com/minio/console/models"
+	"github.com/pidway/console/api/operations"
+	systemApi "github.com/pidway/console/api/operations/system"
+	"github.com/pidway/console/models"
 )
 
 func registerNodesHandler(api *operations.ConsoleAPI) {

@@ -533,7 +533,7 @@ export const notificationEndpointsFields: any = {
       required: true,
       label: "Endpoint",
       tooltip:
-        "Webhook server endpoint e.g. http://localhost:8080/minio/events",
+        "Webhook server endpoint e.g. http://localhost:8080/pidway/events",
       type: "url",
       placeholder: "Enter Endpoint",
     },

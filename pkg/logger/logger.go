@@ -31,15 +31,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/minio/pkg/v2/env"
+	"github.com/pidway/pkg/v2/env"
 
-	"github.com/minio/console/pkg"
-	"github.com/minio/pkg/v2/certs"
+	"github.com/pidway/console/pkg"
+	"github.com/pidway/pkg/v2/certs"
 
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/message/log"
-	"github.com/minio/highwayhash"
-	"github.com/minio/minio-go/v7/pkg/set"
+	"github.com/pidway/console/pkg/logger/config"
+	"github.com/pidway/console/pkg/logger/message/log"
+	"github.com/pidway/highwayhash"
+	"github.com/pidway/minio-go/v7/pkg/set"
 )
 
 // HighwayHash key for logging in anonymous mode
@@ -138,7 +138,7 @@ func uniqueEntries(paths []string) []string {
 }
 
 // Init sets the trimStrings to possible GOPATHs
-// and GOROOT directories. Also append github.com/minio/minio
+// and GOROOT directories. Also append github.com/pidway/minio
 // This is done to clean up the filename, when stack trace is
 // displayed when an errors happens.
 func Init(goPath, goRoot string) {
@@ -182,9 +182,9 @@ func Init(goPath, goRoot string) {
 	// Remove duplicate entries.
 	trimStrings = uniqueEntries(trimStrings)
 
-	// Add "github.com/minio/minio" as the last to cover
-	// paths like "{GOROOT}/src/github.com/minio/minio"
-	// and "{GOPATH}/src/github.com/minio/minio"
+	// Add "github.com/pidway/minio" as the last to cover
+	// paths like "{GOROOT}/src/github.com/pidway/minio"
+	// and "{GOPATH}/src/github.com/pidway/minio"
 	trimStrings = append(trimStrings, filepath.Join("github.com", "minio", "minio")+string(filepath.Separator))
 }
 

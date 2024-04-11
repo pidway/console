@@ -24,17 +24,17 @@ import (
 	"sort"
 	"strings"
 
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	policyApi "github.com/minio/console/api/operations/policy"
-	"github.com/minio/console/pkg/utils"
-	s3 "github.com/minio/minio-go/v7"
+	bucketApi "github.com/pidway/console/api/operations/bucket"
+	policyApi "github.com/pidway/console/api/operations/policy"
+	"github.com/pidway/console/pkg/utils"
+	s3 "github.com/pidway/minio-go/v7"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/models"
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/pidway/console/api/operations"
+	"github.com/pidway/console/models"
+	iampolicy "github.com/pidway/pkg/v2/policy"
 
-	policies "github.com/minio/console/api/policy"
+	policies "github.com/pidway/console/api/policy"
 )
 
 func registersPoliciesHandler(api *operations.ConsoleAPI) {
@@ -545,7 +545,7 @@ func getRemovePolicyResponse(session *models.Principal, params policyApi.RemoveP
 // addPolicy calls MinIO server to add a canned policy.
 // addPolicy() takes name and policy in string format, policy
 // policy must be string in json format, in the future this will change
-// to a Policy struct{} - https://github.com/minio/minio/issues/9171
+// to a Policy struct{} - https://github.com/pidway/pidway/issues/9171
 func addPolicy(ctx context.Context, client MinioAdmin, name, policy string) (*models.Policy, error) {
 	iamp, err := iampolicy.ParseConfig(bytes.NewReader([]byte(policy)))
 	if err != nil {
@@ -588,7 +588,7 @@ func getAddPolicyResponse(session *models.Principal, params policyApi.AddPolicyP
 // policyInfo calls MinIO server to retrieve information of a canned policy.
 // policyInfo() takes a policy name, obtains the []byte (represents a string in JSON format)
 // and return it as *models.Policy , in the future this will change
-// to a Policy struct{} - https://github.com/minio/minio/issues/9171
+// to a Policy struct{} - https://github.com/pidway/pidway/issues/9171
 func policyInfo(ctx context.Context, client MinioAdmin, name string) (*models.Policy, error) {
 	policyRaw, err := client.getPolicy(ctx, name)
 	if err != nil {

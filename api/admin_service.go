@@ -21,10 +21,10 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/models"
+	"github.com/pidway/console/api/operations"
+	"github.com/pidway/console/models"
 
-	svcApi "github.com/minio/console/api/operations/service"
+	svcApi "github.com/pidway/console/api/operations/service"
 )
 
 func registerServiceHandlers(api *operations.ConsoleAPI) {

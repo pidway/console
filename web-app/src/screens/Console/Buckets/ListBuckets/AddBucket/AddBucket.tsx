@@ -287,7 +287,7 @@ const AddBucket = () => {
                       <br />
                       Please deploy a server in{" "}
                       <a
-                        href="https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-multi-node-multi-drive.html?ref=con"
+                        href="https://min.io/docs/pidway/linux/operations/install-deploy-manage/deploy-minio-multi-node-multi-drive.html?ref=con"
                         target="_blank"
                         rel="noopener"
                       >
@@ -359,7 +359,7 @@ const AddBucket = () => {
                       )}
                       MinIO supports keeping multiple{" "}
                       <a
-                        href="https://min.io/docs/minio/kubernetes/upstream/administration/object-management/object-versioning.html#minio-bucket-versioning"
+                        href="https://min.io/docs/pidway/kubernetes/upstream/administration/object-management/object-versioning.html#minio-bucket-versioning"
                         target="blank"
                       >
                         versions
@@ -368,14 +368,14 @@ const AddBucket = () => {
                       <br />
                       Versioning is required to enable{" "}
                       <a
-                        href="https://min.io/docs/minio/macos/administration/object-management.html#object-retention"
+                        href="https://min.io/docs/pidway/macos/administration/object-management.html#object-retention"
                         target="blank"
                       >
                         Object Locking
                       </a>{" "}
                       and{" "}
                       <a
-                        href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#object-retention-modes"
+                        href="https://min.io/docs/pidway/macos/administration/object-management/object-retention.html#object-retention-modes"
                         target="blank"
                       >
                         Retention
@@ -398,7 +398,7 @@ const AddBucket = () => {
                       helpTip={
                         <Fragment>
                           You can choose to{" "}
-                          <a href="https://min.io/docs/minio/windows/administration/object-management/object-versioning.html#exclude-folders-from-versioning">
+                          <a href="https://min.io/docs/pidway/windows/administration/object-management/object-versioning.html#exclude-folders-from-versioning">
                             exclude folders and prefixes
                           </a>{" "}
                           from versioning if Object Locking is not enabled.
@@ -467,7 +467,7 @@ const AddBucket = () => {
                       )}
                       You can only enable{" "}
                       <a
-                        href="https://min.io/docs/minio/macos/administration/object-management.html#object-retention"
+                        href="https://min.io/docs/pidway/macos/administration/object-management.html#object-retention"
                         target="blank"
                       >
                         Object Locking
@@ -475,7 +475,7 @@ const AddBucket = () => {
                       when first creating a bucket.
                       <br />
                       <br />
-                      <a href="https://min.io/docs/minio/windows/administration/object-management/object-versioning.html#exclude-folders-from-versioning">
+                      <a href="https://min.io/docs/pidway/windows/administration/object-management/object-versioning.html#exclude-folders-from-versioning">
                         Exclude folders and prefixes
                       </a>{" "}
                       options will not be available if this option is enabled.
@@ -497,7 +497,7 @@ const AddBucket = () => {
                     <Fragment>
                       Setting a{" "}
                       <a
-                        href="https://min.io/docs/minio/linux/reference/minio-mc/mc-quota-set.html"
+                        href="https://min.io/docs/pidway/linux/reference/minio-mc/mc-quota-set.html"
                         target="blank"
                       >
                         quota
@@ -554,7 +554,7 @@ const AddBucket = () => {
                       <Fragment>
                         MinIO supports setting both{" "}
                         <a
-                          href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#configure-bucket-default-object-retention"
+                          href="https://min.io/docs/pidway/macos/administration/object-management/object-retention.html#configure-bucket-default-object-retention"
                           target="blank"
                         >
                           bucket-default
@@ -591,7 +591,7 @@ const AddBucket = () => {
                         <Fragment>
                           {" "}
                           <a
-                            href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#minio-object-locking-compliance"
+                            href="https://min.io/docs/pidway/macos/administration/object-management/object-retention.html#minio-object-locking-compliance"
                             target="blank"
                           >
                             Compliance
@@ -601,7 +601,7 @@ const AddBucket = () => {
                           <br />
                           <br />
                           <a
-                            href="https://min.io/docs/minio/macos/administration/object-management/object-retention.html#minio-object-locking-governance"
+                            href="https://min.io/docs/pidway/macos/administration/object-management/object-retention.html#minio-object-locking-governance"
                             target="blank"
                           >
                             Governance

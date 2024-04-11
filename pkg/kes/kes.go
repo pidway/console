@@ -22,7 +22,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/minio/kes"
+	"github.com/pidway/kes"
 )
 
 type Identity = kes.Identity

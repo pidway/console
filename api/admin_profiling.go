@@ -21,9 +21,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/websocket"
+	"github.com/pidway/console/models"
+	"github.com/pidway/madmin-go/v3"
+	"github.com/pidway/websocket"
 )
 
 var items []*models.StartProfilingItem

@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/websocket"
+	"github.com/pidway/madmin-go/v3"
+	"github.com/pidway/websocket"
 )
 
 // shortTraceMsg Short trace record
@@ -127,7 +127,7 @@ func startTraceInfo(ctx context.Context, conn WSConn, client MinioAdmin, opts Tr
 }
 
 // shortTrace creates a shorter Trace Info message.
-// Same implementation as github/minio/mc/cmd/admin-trace.go
+// Same implementation as github/pidway/mc/cmd/admin-trace.go
 func shortTrace(info *madmin.ServiceTraceInfo) shortTraceMsg {
 	t := info.Trace
 	s := shortTraceMsg{}

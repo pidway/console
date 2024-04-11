@@ -30,14 +30,14 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations/object"
+	"github.com/pidway/console/api/operations/object"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/pidway/console/models"
+	mc "github.com/pidway/mc/cmd"
+	"github.com/pidway/mc/pkg/probe"
+	"github.com/pidway/minio-go/v7"
+	"github.com/pidway/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -134,10 +134,10 @@ const Login = () => {
       );
   }
 
-  let docsURL = "https://min.io/docs/minio/linux/index.html?ref=con";
+  let docsURL = "https://min.io/docs/pidway/linux/index.html?ref=con";
   if (isK8S) {
     docsURL =
-      "https://min.io/docs/minio/kubernetes/upstream/index.html?ref=con";
+      "https://min.io/docs/pidway/kubernetes/upstream/index.html?ref=con";
   }
 
   useEffect(() => {
@@ -165,7 +165,7 @@ const Login = () => {
             </a>
             <span className={"separator"}>|</span>
             <a
-              href="https://github.com/minio/minio"
+              href="https://github.com/pidway/minio"
               target="_blank"
               rel="noopener"
             >

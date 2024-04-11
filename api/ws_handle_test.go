@@ -21,7 +21,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/minio/websocket"
+	"github.com/pidway/websocket"
 )
 
 // Common mocks for WSConn interface

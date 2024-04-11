@@ -22,8 +22,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/websocket"
+	"github.com/pidway/madmin-go/v3"
+	"github.com/pidway/websocket"
 )
 
 const logTimeFormat string = "15:04:05 MST 01/02/2006"

@@ -34,10 +34,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio-go/v7"
+	"github.com/pidway/minio-go/v7"
 
-	"github.com/minio/console/models"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/pidway/console/models"
+	"github.com/pidway/minio-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -2896,7 +2896,7 @@ func TestReplication(t *testing.T) {
 	}
 	finalResponse = inspectHTTPResponse(response)
 	if response != nil {
-		// https://github.com/minio/minio/pull/14972
+		// https://github.com/pidway/minio/pull/14972
 		// Disallow deletion of arn when active replication config
 		// 204 is no longer expected but 500
 		assert.Equal(500, response.StatusCode, finalResponse)

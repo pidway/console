@@ -22,17 +22,17 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/pidway/console/pkg/utils"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	accountApi "github.com/minio/console/api/operations/account"
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	userApi "github.com/minio/console/api/operations/user"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/pidway/console/api/operations"
+	accountApi "github.com/pidway/console/api/operations/account"
+	bucketApi "github.com/pidway/console/api/operations/bucket"
+	userApi "github.com/pidway/console/api/operations/user"
+	"github.com/pidway/console/models"
+	"github.com/pidway/madmin-go/v3"
+	iampolicy "github.com/pidway/pkg/v2/policy"
 )
 
 // Policy evaluated constants

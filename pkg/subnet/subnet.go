@@ -21,11 +21,11 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/minio/console/pkg/http"
+	"github.com/pidway/console/pkg/http"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	mc "github.com/minio/mc/cmd"
+	"github.com/pidway/console/models"
+	"github.com/pidway/madmin-go/v3"
+	mc "github.com/pidway/mc/cmd"
 	"github.com/tidwall/gjson"
 )
 

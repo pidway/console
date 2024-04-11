@@ -24,8 +24,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/minio/madmin-go/v3"
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/pidway/madmin-go/v3"
+	iampolicy "github.com/pidway/pkg/v2/policy"
 	asrt "github.com/stretchr/testify/assert"
 )
 

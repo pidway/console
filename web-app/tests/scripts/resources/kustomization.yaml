@@ -6,4 +6,4 @@ images:
   - name: minio/operator
 
 resources:
-  - github.com/minio/operator/resources/
+  - github.com/pidway/operator/resources/

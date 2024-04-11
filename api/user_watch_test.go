@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
+	mc "github.com/pidway/mc/cmd"
+	"github.com/pidway/mc/pkg/probe"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -24,13 +24,13 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/pidway/console/pkg/utils"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	release "github.com/minio/console/api/operations/release"
-	"github.com/minio/console/models"
-	"github.com/minio/pkg/v2/env"
+	"github.com/pidway/console/api/operations"
+	release "github.com/pidway/console/api/operations/release"
+	"github.com/pidway/console/models"
+	"github.com/pidway/pkg/v2/env"
 )
 
 var (

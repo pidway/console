@@ -24,18 +24,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
+	"github.com/pidway/minio-go/v7"
 
 	"github.com/rs/xid"
 
-	"github.com/minio/mc/cmd/ilm"
+	"github.com/pidway/mc/cmd/ilm"
 
-	"github.com/minio/minio-go/v7/pkg/lifecycle"
+	"github.com/pidway/minio-go/v7/pkg/lifecycle"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	"github.com/minio/console/models"
+	"github.com/pidway/console/api/operations"
+	bucketApi "github.com/pidway/console/api/operations/bucket"
+	"github.com/pidway/console/models"
 )
 
 type MultiLifecycleResult struct {

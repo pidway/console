@@ -84,7 +84,7 @@ export const ProxyConfiguration = () => {
           >
             For airgap/firewalled environments it is possible to{" "}
             <a
-              href="https://min.io/docs/minio/linux/reference/minio-mc-admin/mc-admin-config.html?ref=con"
+              href="https://min.io/docs/pidway/linux/reference/minio-mc-admin/mc-admin-config.html?ref=con"
               target="_blank"
             >
               configure a proxy

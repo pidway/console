@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/models"
-	"github.com/minio/websocket"
+	"github.com/pidway/console/models"
+	"github.com/pidway/websocket"
 )
 
 func (wsc *wsMinioClient) objectManager(session *models.Principal) {

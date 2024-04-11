@@ -30,8 +30,8 @@ import (
 	"time"
 
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/api"
-	"github.com/minio/console/api/operations"
+	"github.com/pidway/console/api"
+	"github.com/pidway/console/api/operations"
 )
 
 var token string

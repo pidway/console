@@ -27,14 +27,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/madmin-go/v3"
+	"github.com/pidway/madmin-go/v3"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/pidway/console/pkg/utils"
 
 	errorsApi "github.com/go-openapi/errors"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/websocket"
+	"github.com/pidway/console/models"
+	"github.com/pidway/console/pkg/auth"
+	"github.com/pidway/websocket"
 )
 
 var upgrader = websocket.Upgrader{

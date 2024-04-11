@@ -24,8 +24,8 @@ import (
 	"regexp"
 	"strings"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/websocket"
+	mc "github.com/pidway/mc/cmd"
+	"github.com/pidway/websocket"
 )
 
 type watchOptions struct {

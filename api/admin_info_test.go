@@ -23,12 +23,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/pidway/console/pkg/utils"
 
-	"github.com/minio/console/api/operations"
-	systemApi "github.com/minio/console/api/operations/system"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
+	"github.com/pidway/console/api/operations"
+	systemApi "github.com/pidway/console/api/operations/system"
+	"github.com/pidway/console/models"
+	"github.com/pidway/madmin-go/v3"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

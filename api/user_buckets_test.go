@@ -25,16 +25,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/console/pkg/utils"
+	"github.com/pidway/console/pkg/auth/token"
+	"github.com/pidway/console/pkg/utils"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/pidway/console/models"
+	"github.com/pidway/madmin-go/v3"
+	"github.com/pidway/mc/pkg/probe"
+	"github.com/pidway/minio-go/v7"
+	"github.com/pidway/minio-go/v7/pkg/sse"
+	"github.com/pidway/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
 )
 

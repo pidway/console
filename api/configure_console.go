@@ -37,22 +37,22 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/minio/console/pkg/logger"
-	"github.com/minio/console/pkg/utils"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/pidway/console/pkg/logger"
+	"github.com/pidway/console/pkg/utils"
+	"github.com/pidway/minio-go/v7/pkg/credentials"
 
 	"github.com/klauspost/compress/gzhttp"
 
-	portal_ui "github.com/minio/console/web-app"
-	"github.com/minio/pkg/v2/env"
-	"github.com/minio/pkg/v2/mimedb"
-	xnet "github.com/minio/pkg/v2/net"
+	portal_ui "github.com/pidway/console/web-app"
+	"github.com/pidway/pkg/v2/env"
+	"github.com/pidway/pkg/v2/mimedb"
+	xnet "github.com/pidway/pkg/v2/net"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
+	"github.com/pidway/console/api/operations"
+	"github.com/pidway/console/models"
+	"github.com/pidway/console/pkg/auth"
 	"github.com/unrolled/secure"
 )
 

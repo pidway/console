@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"testing"
 
-	tieringApi "github.com/minio/console/api/operations/tiering"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
+	tieringApi "github.com/pidway/console/api/operations/tiering"
+	"github.com/pidway/console/models"
+	"github.com/pidway/madmin-go/v3"
 	"github.com/stretchr/testify/assert"
 )
 

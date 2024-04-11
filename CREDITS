@@ -6818,8 +6818,8 @@ https://github.com/matttproud/golang_protobuf_extensions
 
 ================================================================
 
-github.com/minio/cli
-https://github.com/minio/cli
+github.com/pidway/cli
+https://github.com/pidway/cli
 ----------------------------------------------------------------
 MIT License
 
@@ -6845,8 +6845,8 @@ SOFTWARE.
 
 ================================================================
 
-github.com/minio/highwayhash
-https://github.com/minio/highwayhash
+github.com/pidway/highwayhash
+https://github.com/pidway/highwayhash
 ----------------------------------------------------------------
 
                                  Apache License
@@ -7053,8 +7053,8 @@ https://github.com/minio/highwayhash
 
 ================================================================
 
-github.com/minio/kes
-https://github.com/minio/kes
+github.com/pidway/kes
+https://github.com/pidway/kes
 ----------------------------------------------------------------
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
@@ -7720,8 +7720,8 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 
 ================================================================
 
-github.com/minio/kes-go
-https://github.com/minio/kes-go
+github.com/pidway/kes-go
+https://github.com/pidway/kes-go
 ----------------------------------------------------------------
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
@@ -8387,8 +8387,8 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 
 ================================================================
 
-github.com/minio/madmin-go/v3
-https://github.com/minio/madmin-go/v3
+github.com/pidway/madmin-go/v3
+https://github.com/pidway/madmin-go/v3
 ----------------------------------------------------------------
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
@@ -9054,8 +9054,8 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 
 ================================================================
 
-github.com/minio/mc
-https://github.com/minio/mc
+github.com/pidway/mc
+https://github.com/pidway/mc
 ----------------------------------------------------------------
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
@@ -9721,8 +9721,8 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 
 ================================================================
 
-github.com/minio/md5-simd
-https://github.com/minio/md5-simd
+github.com/pidway/md5-simd
+https://github.com/pidway/md5-simd
 ----------------------------------------------------------------
 
                                  Apache License
@@ -9929,8 +9929,8 @@ https://github.com/minio/md5-simd
 
 ================================================================
 
-github.com/minio/minio-go/v7
-https://github.com/minio/minio-go/v7
+github.com/pidway/minio-go/v7
+https://github.com/pidway/minio-go/v7
 ----------------------------------------------------------------
 
                                  Apache License
@@ -10137,8 +10137,8 @@ https://github.com/minio/minio-go/v7
 
 ================================================================
 
-github.com/minio/mux
-https://github.com/minio/mux
+github.com/pidway/mux
+https://github.com/pidway/mux
 ----------------------------------------------------------------
 Copyright (c) 2012-2018 The Gorilla Authors. All rights reserved.
 
@@ -10170,8 +10170,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ================================================================
 
-github.com/minio/pkg/v2
-https://github.com/minio/pkg/v2
+github.com/pidway/pkg/v2
+https://github.com/pidway/pkg/v2
 ----------------------------------------------------------------
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
@@ -10837,8 +10837,8 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 
 ================================================================
 
-github.com/minio/selfupdate
-https://github.com/minio/selfupdate
+github.com/pidway/selfupdate
+https://github.com/pidway/selfupdate
 ----------------------------------------------------------------
 
                                  Apache License
@@ -11045,8 +11045,8 @@ https://github.com/minio/selfupdate
 
 ================================================================
 
-github.com/minio/sha256-simd
-https://github.com/minio/sha256-simd
+github.com/pidway/sha256-simd
+https://github.com/pidway/sha256-simd
 ----------------------------------------------------------------
 
                                  Apache License
@@ -11253,8 +11253,8 @@ https://github.com/minio/sha256-simd
 
 ================================================================
 
-github.com/minio/websocket
-https://github.com/minio/websocket
+github.com/pidway/websocket
+https://github.com/pidway/websocket
 ----------------------------------------------------------------
 Copyright (c) 2013 The Gorilla WebSocket Authors. All rights reserved.
 

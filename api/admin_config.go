@@ -24,11 +24,11 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/models"
-	madmin "github.com/minio/madmin-go/v3"
+	"github.com/pidway/console/api/operations"
+	"github.com/pidway/console/models"
+	madmin "github.com/pidway/madmin-go/v3"
 
-	cfgApi "github.com/minio/console/api/operations/configuration"
+	cfgApi "github.com/pidway/console/api/operations/configuration"
 )
 
 func registerConfigHandlers(api *operations.ConsoleAPI) {
@@ -202,7 +202,7 @@ func setConfig(ctx context.Context, client MinioAdmin, configName *string, kvs [
 func setConfigWithARNAccountID(ctx context.Context, client MinioAdmin, configName *string, kvs []*models.ConfigurationKV, arnAccountID string) (restart bool, err error) {
 	// if arnAccountID is not empty the configuration will be treated as a notification target
 	// arnAccountID will be used as an identifier for that specific target
-	// docs: https://min.io/docs/minio/linux/administration/monitoring/bucket-notifications.html
+	// docs: https://min.io/docs/pidway/linux/administration/monitoring/bucket-notifications.html
 	if arnAccountID != "" {
 		configName = swag.String(fmt.Sprintf("%s:%s", *configName, arnAccountID))
 	}

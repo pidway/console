@@ -28,9 +28,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/minio/cli"
-	xcerts "github.com/minio/pkg/v2/certs"
-	"github.com/minio/pkg/v2/env"
+	"github.com/pidway/cli"
+	xcerts "github.com/pidway/pkg/v2/certs"
+	"github.com/pidway/pkg/v2/env"
 	"github.com/mitchellh/go-homedir"
 )
 

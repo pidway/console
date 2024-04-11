@@ -20,10 +20,10 @@ import (
 	"context"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	siteRepApi "github.com/minio/console/api/operations/site_replication"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
+	"github.com/pidway/console/api/operations"
+	siteRepApi "github.com/pidway/console/api/operations/site_replication"
+	"github.com/pidway/console/models"
+	"github.com/pidway/madmin-go/v3"
 )
 
 func registerSiteReplicationStatusHandler(api *operations.ConsoleAPI) {

@@ -28,12 +28,12 @@ import (
 	"time"
 
 	"github.com/mattn/go-ieproxy"
-	xhttp "github.com/minio/console/pkg/http"
+	xhttp "github.com/pidway/console/pkg/http"
 	"github.com/tidwall/gjson"
 
-	"github.com/minio/madmin-go/v3"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/pkg/v2/env"
+	"github.com/pidway/madmin-go/v3"
+	mc "github.com/pidway/mc/cmd"
+	"github.com/pidway/pkg/v2/env"
 )
 
 const (

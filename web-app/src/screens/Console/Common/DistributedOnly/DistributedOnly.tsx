@@ -45,7 +45,7 @@ const DistributedOnly = ({ iconComponent, entity }: IDistributedOnly) => {
               <span>
                 Please deploy a server in{" "}
                 <a
-                  href="https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-multi-node-multi-drive.html?ref=con"
+                  href="https://min.io/docs/pidway/linux/operations/install-deploy-manage/deploy-minio-multi-node-multi-drive.html?ref=con"
                   target="_blank"
                   rel="noopener"
                 >

@@ -25,23 +25,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
+	"github.com/pidway/minio-go/v7"
 
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/pidway/madmin-go/v3"
+	"github.com/pidway/mc/cmd"
+	"github.com/pidway/mc/pkg/probe"
+	"github.com/pidway/minio-go/v7/pkg/sse"
+	"github.com/pidway/minio-go/v7/pkg/tags"
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/api/operations"
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/minio-go/v7/pkg/policy"
-	"github.com/minio/minio-go/v7/pkg/replication"
-	minioIAMPolicy "github.com/minio/pkg/v2/policy"
+	"github.com/pidway/console/api/operations"
+	bucketApi "github.com/pidway/console/api/operations/bucket"
+	"github.com/pidway/console/models"
+	"github.com/pidway/console/pkg/auth/token"
+	"github.com/pidway/minio-go/v7/pkg/policy"
+	"github.com/pidway/minio-go/v7/pkg/replication"
+	minioIAMPolicy "github.com/pidway/pkg/v2/policy"
 )
 
 func registerBucketsHandlers(api *operations.ConsoleAPI) {

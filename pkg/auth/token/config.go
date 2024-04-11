@@ -19,8 +19,8 @@ package token
 import (
 	"time"
 
-	"github.com/minio/console/pkg/auth/utils"
-	"github.com/minio/pkg/v2/env"
+	"github.com/pidway/console/pkg/auth/utils"
+	"github.com/pidway/pkg/v2/env"
 )
 
 // GetConsoleSTSDuration returns the default session duration for the STS requested tokens (defaults to 12h)

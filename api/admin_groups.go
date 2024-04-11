@@ -21,13 +21,13 @@ import (
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/pkg/utils"
-	"github.com/minio/madmin-go/v3"
+	"github.com/pidway/console/api/operations"
+	"github.com/pidway/console/pkg/utils"
+	"github.com/pidway/madmin-go/v3"
 
-	groupApi "github.com/minio/console/api/operations/group"
+	groupApi "github.com/pidway/console/api/operations/group"
 
-	"github.com/minio/console/models"
+	"github.com/pidway/console/models"
 )
 
 func registerGroupsHandlers(api *operations.ConsoleAPI) {

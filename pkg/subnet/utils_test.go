@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/mc/cmd"
+	"github.com/pidway/mc/cmd"
 )
 
 func Test_subnetBaseURL(t *testing.T) {

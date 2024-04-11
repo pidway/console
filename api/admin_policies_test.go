@@ -25,8 +25,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/console/models"
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/pidway/console/models"
+	iampolicy "github.com/pidway/pkg/v2/policy"
 	"github.com/stretchr/testify/assert"
 )
 

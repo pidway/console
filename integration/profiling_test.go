@@ -24,7 +24,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/minio/websocket"
+	"github.com/pidway/websocket"
 	"github.com/stretchr/testify/assert"
 )
 

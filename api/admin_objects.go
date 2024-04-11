@@ -21,8 +21,8 @@ import (
 	"encoding/base64"
 	"time"
 
-	"github.com/minio/mc/cmd"
-	"github.com/minio/minio-go/v7"
+	"github.com/pidway/mc/cmd"
+	"github.com/pidway/minio-go/v7"
 )
 
 type objectsListOpts struct {

@@ -4,7 +4,7 @@ GOPATH := $(shell go env GOPATH)
 BUILD_VERSION:=$(shell git describe --exact-match --tags $(git log -n1 --pretty='%h') 2>/dev/null || git rev-parse --abbrev-ref HEAD 2>/dev/null)
 BUILD_TIME:=$(shell date 2>/dev/null)
 TAG ?= "minio/console:$(BUILD_VERSION)-dev"
-MINIO_VERSION ?= "quay.io/minio/minio:latest"
+MINIO_VERSION ?= "quay.io/pidway/minio:latest"
 TARGET_BUCKET ?= "target"
 NODE_VERSION := $(shell cat .nvmrc)
 
@@ -139,7 +139,7 @@ test-replication:
 test-sso-integration:
 	@echo "create the network in bridge mode to communicate all containers"
 	@(docker network create my-net)
-	@echo "run openldap container using MinIO Image: quay.io/minio/openldap:latest"
+	@echo "run openldap container using MinIO Image: quay.io/pidway/openldap:latest"
 	@(docker run \
 		-e LDAP_ORGANIZATION="MinIO Inc" \
 		-e LDAP_DOMAIN="min.io" \
@@ -148,8 +148,8 @@ test-sso-integration:
 		-p 389:389 \
 		-p 636:636 \
 		--name openldap \
-		--detach quay.io/minio/openldap:latest)
-	@echo "Run Dex container using MinIO Image: quay.io/minio/dex:latest"
+		--detach quay.io/pidway/openldap:latest)
+	@echo "Run Dex container using MinIO Image: quay.io/pidway/dex:latest"
 	@(docker run \
 		-e DEX_ISSUER=http://dex:5556/dex \
 		-e DEX_CLIENT_REDIRECT_URI=http://127.0.0.1:9090/oauth_callback \
@@ -157,7 +157,7 @@ test-sso-integration:
 		--network my-net \
 		-p 5556:5556 \
 		--name dex \
-		--detach quay.io/minio/dex:latest)
+		--detach quay.io/pidway/dex:latest)
 	@echo "running minio server"
 	@(docker run \
 	-v /data1 -v /data2 -v /data3 -v /data4 \
@@ -187,37 +187,37 @@ test-sso-integration:
 	@(cd sso-integration && go test -coverpkg=../api -c -tags testrunmain . && mkdir -p coverage && ./sso-integration.test -test.v -test.run "^Test*" -test.coverprofile=coverage/sso-system.out)
 
 test-permissions-1:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 	@(env bash $(PWD)/web-app/tests/scripts/permissions.sh "web-app/tests/permissions-1/")
 	@(docker stop minio)
 
 test-permissions-2:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 	@(env bash $(PWD)/web-app/tests/scripts/permissions.sh "web-app/tests/permissions-2/")
 	@(docker stop minio)
 
 test-permissions-3:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 	@(env bash $(PWD)/web-app/tests/scripts/permissions.sh "web-app/tests/permissions-3/")
 	@(docker stop minio)
 
 test-permissions-4:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 	@(env bash $(PWD)/web-app/tests/scripts/permissions.sh "web-app/tests/permissions-4/")
 	@(docker stop minio)
 
 test-permissions-5:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 	@(env bash $(PWD)/web-app/tests/scripts/permissions.sh "web-app/tests/permissions-5/")
 	@(docker stop minio)
 
 test-permissions-6:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 	@(env bash $(PWD)/web-app/tests/scripts/permissions.sh "web-app/tests/permissions-6/")
 	@(docker stop minio)
 
 test-permissions-7:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 	@(env bash $(PWD)/web-app/tests/scripts/permissions.sh "web-app/tests/permissions-7/")
 	@(docker stop minio)
 
@@ -225,7 +225,7 @@ test-apply-permissions:
 	@(env bash $(PWD)/web-app/tests/scripts/initialize-env.sh)
 
 test-start-docker-minio:
-	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/minio/minio:latest server /data{1...4})
+	@(docker run -v /data1 -v /data2 -v /data3 -v /data4 -d --name minio --rm -p 9000:9000 quay.io/pidway/minio:latest server /data{1...4})
 
 initialize-permissions: test-start-docker-minio test-apply-permissions
 	@echo "Done initializing permissions test"
@@ -243,7 +243,7 @@ test-start-docker-minio-w-redirect-url: initialize-docker-network
     -e MINIO_SERVER_URL='http://localhost:9000' \
     -v /data1 -v /data2 -v /data3 -v /data4 \
     -d --network host --name minio --rm\
-    quay.io/minio/minio:latest server /data{1...4}) 
+    quay.io/pidway/minio:latest server /data{1...4}) 
 
 test-start-docker-nginx-w-subpath:
 	@(docker run \
@@ -274,7 +274,7 @@ test-pkg:
 	@(cd pkg && mkdir -p coverage && GO111MODULE=on go test ./... -test.v -coverprofile=coverage/coverage-pkg.out)
 
 coverage:
-	@(GO111MODULE=on go test -v -coverprofile=coverage.out github.com/minio/console/api/... && go tool cover -html=coverage.out && open coverage.html)
+	@(GO111MODULE=on go test -v -coverprofile=coverage.out github.com/pidway/console/api/... && go tool cover -html=coverage.out && open coverage.html)
 
 clean:
 	@echo "Cleaning up all the generated files"

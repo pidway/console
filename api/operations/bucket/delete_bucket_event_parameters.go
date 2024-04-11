@@ -32,7 +32,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
 
-	"github.com/minio/console/models"
+	"github.com/pidway/console/models"
 )
 
 // NewDeleteBucketEventParams creates a new DeleteBucketEventParams object

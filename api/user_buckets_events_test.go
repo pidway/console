@@ -23,9 +23,9 @@ import (
 	"testing"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/notification"
+	"github.com/pidway/console/models"
+	"github.com/pidway/mc/pkg/probe"
+	"github.com/pidway/minio-go/v7/pkg/notification"
 	"github.com/stretchr/testify/assert"
 )
 
